@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: capi-messaging-email
+Description: 
+Version: 
+Requires: dlog glib-2.0 capi-base-common email-service capi-appfw-app-common 
+Libs: -L${libdir} -lcapi-messaging-email
+Cflags: -I${includedir} -I${includedir}/messaging
+

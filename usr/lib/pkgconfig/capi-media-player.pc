@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/media
+
+Name: capi-media-player
+Description: 
+Version: 
+Requires: libtbm capi-media-tool capi-base-common capi-media-sound-manager ecore-wayland
+Libs: -L${libdir} -lcapi-media-player
+Cflags: -I${includedir}
+

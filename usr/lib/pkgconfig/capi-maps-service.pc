@@ -1,0 +1,13 @@
+#Package Information for pkg-config
+
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/maps
+
+Name: capi-maps-service
+Description: Tizen Maps Library
+Version: 
+Requires: capi-base-common evas
+Libs: -L${libdir} -lcapi-maps-service
+Cflags: -I${includedir} 
+

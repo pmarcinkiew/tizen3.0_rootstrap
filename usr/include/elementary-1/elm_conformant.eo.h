@@ -1,0 +1,45 @@
+#ifndef _ELM_CONFORMANT_EO_H_
+#define _ELM_CONFORMANT_EO_H_
+
+#ifndef _ELM_CONFORMANT_EO_CLASS_TYPE
+#define _ELM_CONFORMANT_EO_CLASS_TYPE
+
+typedef Eo Elm_Conformant;
+
+#endif
+
+#ifndef _ELM_CONFORMANT_EO_TYPES
+#define _ELM_CONFORMANT_EO_TYPES
+
+
+#endif
+#define ELM_CONFORMANT_CLASS elm_conformant_class_get()
+
+EAPI const Eo_Class *elm_conformant_class_get(void) EINA_CONST;
+
+EOAPI extern const Eo_Event_Description _ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_ON;
+EOAPI extern const Eo_Event_Description _ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_OFF;
+EOAPI extern const Eo_Event_Description _ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_ON;
+EOAPI extern const Eo_Event_Description _ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_OFF;
+
+/**
+ * No description
+ */
+#define ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_ON (&(_ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_ON))
+
+/**
+ * No description
+ */
+#define ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_OFF (&(_ELM_CONFORMANT_EVENT_VIRTUALKEYPAD_STATE_OFF))
+
+/**
+ * No description
+ */
+#define ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_ON (&(_ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_ON))
+
+/**
+ * No description
+ */
+#define ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_OFF (&(_ELM_CONFORMANT_EVENT_CLIPBOARD_STATE_OFF))
+
+#endif

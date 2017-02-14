@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+features= -DTIZEN_FEATURE_SERVICE_DISCOVERY -DTIZEN_FEATURE_WIFI_DISPLAY -DTIZEN_FEATURE_WIFI_DIRECT_ON_DEMAND
+
+Name: wifi-direct
+Description: Wi-Fi Direct Library 
+Version: 1.2.76
+Libs: -L${libdir} -lwifi-direct
+Cflags: -I${includedir} -I${includedir}/wifi-direct ${features}
+

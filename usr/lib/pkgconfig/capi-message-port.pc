@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/appfw
+
+Name: capi-message-port
+Description: Message Port internal library
+Version: 1.2.2.1
+Requires: capi-base-common
+Libs: -L${libdir} -lmessage-port
+Cflags: -I${includedir}
+

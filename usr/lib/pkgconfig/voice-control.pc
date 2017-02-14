@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libvc
+Description: Voice control client library
+Requires: glib-2.0 dbus-1 capi-base-common
+Version: 0.2.10
+Libs: -L${libdir} -lvc
+Cflags: -I${includedir}

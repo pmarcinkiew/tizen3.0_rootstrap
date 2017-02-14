@@ -1,0 +1,21 @@
+#ifndef _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_H_
+#define _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_H_
+
+#ifndef _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_CLASS_TYPE
+#define _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_CLASS_TYPE
+
+typedef Eo Ector_Renderer_Generic_Gradient_Radial;
+
+#endif
+
+#ifndef _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_TYPES
+#define _ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_EO_TYPES
+
+
+#endif
+#define ECTOR_RENDERER_GENERIC_GRADIENT_RADIAL_MIXIN ector_renderer_generic_gradient_radial_mixin_get()
+
+EAPI const Eo_Class *ector_renderer_generic_gradient_radial_mixin_get(void) EINA_CONST;
+
+
+#endif

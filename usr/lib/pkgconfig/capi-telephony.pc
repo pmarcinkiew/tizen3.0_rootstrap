@@ -1,0 +1,14 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/telephony
+
+Name: capi-telephony
+Description: 
+Version: 0.0.1
+Requires: capi-base-common tapi
+Libs: -L${libdir} -lcapi-telephony
+Cflags: -I${includedir}

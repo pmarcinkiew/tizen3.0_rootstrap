@@ -1,0 +1,14 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/media
+
+Name: capi-media-vision
+Description: 
+Version: 
+Requires: dlog
+Libs: -L${libdir} -lcapi-media-vision
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+datadir=/usr/share
+pkgdatadir=/usr/share/tzsh
+
+Name: tzsh
+Description: Support Screensaver Manager Service in Tizen Window System.
+Version: 0.1.0
+Libs: -L${libdir} -ltzsh_common -ltzsh_screensaver_manager_service
+Cflags: -I${includedir}/tzsh

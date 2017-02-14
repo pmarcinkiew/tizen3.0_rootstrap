@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: ehal
+Description: Hal convenience library
+Requires.private: edbus >= 1.7.9
+Version: 1.7.9
+Libs: -L${libdir} -lehal
+Cflags: -I${includedir}/e_dbus-1

@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: capi-ui-inputmethod
+Description: 
+Version: 0.0.1
+Requires: capi-base-common dlog elementary ecore-imf libscl-core isf cynara-client cynara-session
+Libs: -L${libdir} -lcapi-ui-inputmethod
+Cflags: -I${includedir}
+

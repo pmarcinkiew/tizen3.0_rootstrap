@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/media
+
+Name: capi-media-codec
+Description: 
+Version: 
+Requires: capi-base-common capi-media-tool gstreamer-1.0 gstreamer-plugins-base-1.0 gstreamer-app-1.0
+Libs: -L${libdir} -lcapi-media-codec
+Cflags: -I${includedir}
+

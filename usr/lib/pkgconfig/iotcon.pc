@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}/bin
+libdir=/usr/lib
+includedir=/usr/include/iotcon
+
+Name: iotcon
+Description: IoT Connectivity Manager
+Version: 0.3.10
+Requires:
+Libs: -L${libdir} -liotcon
+Cflags: -I${includedir}

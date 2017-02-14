@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: UI View Manager
+Description: Tizen UI View Manager library
+Version: 0.1.0
+Requires:
+Libs: -L${libdir} -lui-viewmgr
+Cflags: -I${includedir}/ui-viewmgr

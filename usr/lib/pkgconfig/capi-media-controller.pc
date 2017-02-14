@@ -1,0 +1,14 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/media
+
+Name: capi-media-controller
+Description: 
+Version: 0.0.1
+Requires: capi-base-common glib-2.0 gio-2.0 dlog sqlite3 db-util aul bundle libtzplatform-config cynara-client cynara-session cynara-creds-socket
+Libs: -L${libdir} -lcapi-media-controller
+Cflags: -I${includedir} -I${includedir}/media

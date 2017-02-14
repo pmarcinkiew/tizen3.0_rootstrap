@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include/widget_viewer_evas
+
+Name: widget_viewer_evas
+Description: Support development of the widget Viewer EVAS Frontend library
+Version: 1.0.0
+Requires: widget_service screen_connector_watcher_evas widget_viewer
+Libs: -L${libdir} -lwidget_viewer_evas -lscreen_connector_watcher_evas
+Cflags: -I${includedir}
+cppflags: -I${includedir}

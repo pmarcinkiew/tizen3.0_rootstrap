@@ -1,0 +1,13 @@
+
+# Package Information for pkg-config
+
+libdir=/usr/lib
+includedir=/usr/include/system
+
+Name: capi-system-info
+Description: 
+Version: 0.2.0
+Requires: capi-base-common
+Libs: -L${libdir} -lcapi-system-info
+Cflags: -I${includedir}
+

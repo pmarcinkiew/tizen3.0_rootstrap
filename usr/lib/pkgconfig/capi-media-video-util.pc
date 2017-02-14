@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/media
+
+Name: capi-media-video-util
+Description: 
+Version: 0.0.1
+Requires: capi-base-common capi-system-info
+Libs: -L${libdir} -lcapi-media-video-util
+Cflags: -I${includedir}
+

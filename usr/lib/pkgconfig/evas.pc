@@ -1,0 +1,16 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+datarootdir=${prefix}/share
+datadir=/usr/share
+eoincludedir=/usr/share/eolian/include
+eolian_flags=-I${pc_sysrootdir}${eoincludedir}/evas-1
+
+Name: evas
+Description: Evas canvas display library
+Requires.private: libpng >= 1.2.10 harfbuzz >= 0.9.0 fribidi >= 0.19.2 fontconfig >= 2.5.0 freetype2 >= 9.3.0 ector >= 1.16.0 emile >= 1.16.0 efl >= 1.16.0 eina >= 1.16.0 eet >= 1.16.0 eo >= 1.16.0 lua >= 5.1.0  
+Version: 1.16.0
+Libs: -L${libdir} -levas
+Libs.private: -ljpeg  -ldl -lm -lhyphen  -lrt
+Cflags: -I${includedir}/efl-1 -I${includedir}/evas-1

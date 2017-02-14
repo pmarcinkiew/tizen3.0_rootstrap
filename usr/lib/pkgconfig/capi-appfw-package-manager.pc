@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/appfw
+
+Name: capi-appfw-package-manager
+Description: Package Manager API
+Version: 0.0.30
+Requires: capi-base-common
+Libs: -L${libdir} -lcapi-appfw-package-manager
+Cflags: -I${includedir}

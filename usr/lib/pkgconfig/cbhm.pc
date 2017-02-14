@@ -1,0 +1,11 @@
+prefix=/usr/apps/org.tizen.cbhm
+exec_prefix=${prefix}/bin
+libdir=/usr/lib
+includedir=/usr/include/cbhm
+
+Name: cbhm
+Description: Clipboard History Manager
+Version: 1.0.0
+Requires:
+Libs: -L${libdir} -lcbhm
+Cflags: -I${includedir}

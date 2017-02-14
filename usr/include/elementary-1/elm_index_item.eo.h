@@ -1,0 +1,70 @@
+#ifndef _ELM_INDEX_ITEM_EO_H_
+#define _ELM_INDEX_ITEM_EO_H_
+
+#ifndef _ELM_INDEX_ITEM_EO_CLASS_TYPE
+#define _ELM_INDEX_ITEM_EO_CLASS_TYPE
+
+typedef Eo Elm_Index_Item;
+
+#endif
+
+#ifndef _ELM_INDEX_ITEM_EO_TYPES
+#define _ELM_INDEX_ITEM_EO_TYPES
+
+
+#endif
+#define ELM_INDEX_ITEM_CLASS elm_index_item_class_get()
+
+EAPI const Eo_Class *elm_index_item_class_get(void) EINA_CONST;
+
+/**
+ * @brief Set the selected state of an item.
+ *
+ * This sets the selected state of the given item @c it. @c true for selected,
+ * @c false for not selected.
+ *
+ * If a new item is selected the previously selected will be unselected.
+ * Previously selected item can be get with function
+ * elm_index_selected_item_get().
+ *
+ * Selected items will be highlighted.
+ *
+ * @if MOBILE @since_tizen 2.3 @elseif WEARABLE @since_tizen 2.3.1 @endif
+ *
+ * @param[in] selected @c true if selected, @c false otherwise
+ *
+ * @ingroup Elm_Index_Item
+ */
+EOAPI void  elm_obj_index_item_selected_set(Eina_Bool selected);
+
+/**
+ * @brief Sets the priority of an item.
+ *
+ * The priority is -1 by default, which means that the item doesn't belong to a
+ * group. The value of the priority starts from 0.
+ *
+ * In elm_index_level_go, the items are sorted in ascending order according to
+ * priority. Items of the same priority make a group and the primary group is
+ * shown by default.
+ *
+ * @if MOBILE @since_tizen 3.0 @elseif WEARABLE @since_tizen 3.0 @endif
+ *
+ * @param[in] priority The priority
+ *
+ * @ingroup Elm_Index_Item
+ */
+EOAPI void  elm_obj_index_item_priority_set(int priority);
+
+/**
+ * @brief Get the letter (string) set on a given index widget item.
+ *
+ * @if MOBILE @since_tizen 2.3 @elseif WEARABLE @since_tizen 2.3.1 @endif
+ *
+ * @return The letter string set on @c item
+ *
+ * @ingroup Elm_Index_Item
+ */
+EOAPI const char * elm_obj_index_item_letter_get(void);
+
+
+#endif

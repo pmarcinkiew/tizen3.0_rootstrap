@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: capi-messaging-messages
+Description: 
+Version: 
+Requires: dlog glib-2.0 msg-service capi-base-common capi-appfw-application capi-content-mime-type capi-system-info 
+Libs: -L${libdir} -lcapi-messaging-messages
+Cflags: -I${includedir} -I${includedir}/messaging
+

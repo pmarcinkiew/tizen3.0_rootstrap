@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: efreet-mime
+Description: Freedesktop Shared Mime Info standard implementation for the EFL
+Version: 1.16.0
+Requires.private: ecore-ipc >= 1.16.0 emile >= 1.16.0 eina >= 1.16.0 eo >= 1.16.0 ecore-file >= 1.16.0 ecore >= 1.16.0 eet >= 1.16.0  
+Libs: -L${libdir} -lefreet_mime
+Cflags: -I${includedir}/efl-1 -I${includedir}/efreet-1

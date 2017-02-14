@@ -1,0 +1,13 @@
+#Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/context-service
+
+Name: motion
+Description: Tizen Native Motion Recognition API
+Version: 1.2.1
+Requires: glib-2.0 dlog capi-base-common capi-system-info sensor
+Libs: -L${libdir} -lcore-context-manager
+Cflags: -I${includedir}

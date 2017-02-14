@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include/badge
+
+Name: badge
+Description: Badge supporting library
+Version: 0.0.1 
+Requires: capi-base-common
+Libs: -L${libdir} -lbadge
+Cflags: -I${includedir}

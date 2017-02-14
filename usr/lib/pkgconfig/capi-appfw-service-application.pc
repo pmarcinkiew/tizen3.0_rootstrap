@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/appcore-agent
+
+Name: appcore-agent
+Description: Service Application Library
+Version: 1.0.4
+Requires: aul dlog capi-appfw-application
+Libs: -L${libdir} -lappcore-agent
+Cflags: -I${includedir}

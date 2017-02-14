@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: ttrace
+Description: T-trace for tizen
+Version: 1.1
+Requires: dlog
+Libs: -L${libdir} -lttrace
+Cflags: -I${includedir}

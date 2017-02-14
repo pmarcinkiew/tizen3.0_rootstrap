@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: atrace
+Description: atrace for tizen
+Version: 1.1
+Requires: zlib
+Libs: -L${libdir}
+Cflags: -I${includedir}

@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/geofence
+
+Name: capi-geofence-manager
+Description: 
+Version: 
+Requires: capi-base-common 
+Libs: -L${libdir} -lcapi-geofence-manager
+Cflags: -I${includedir}
+

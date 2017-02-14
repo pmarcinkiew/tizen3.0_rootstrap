@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: enotify
+Description: Notification convenience library
+Requires.private: evas >= 1.7.9 edbus >= 1.7.9
+Version: 1.7.9
+Libs: -L${libdir} -lenotify
+Cflags: -I${includedir}/e_dbus-1

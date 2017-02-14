@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=%{prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: csr
+Description: 
+Version: 2.2.1
+Requires:
+Libs: -L${libdir} -lcsr-client -lcsr-common
+Cflags: -I${includedir}/csr

@@ -1,0 +1,11 @@
+prefix = 
+exec_prefix=
+libdir = 
+includedir = 
+
+Name : mediastreamer
+Description : Multimedia Framework MediaStreamer Library
+Requires : mm-common
+Version : 
+Libs : -L${libdir} -lcapi-media-streamer
+Cflags : -I${includedir}/media

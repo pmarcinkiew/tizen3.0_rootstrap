@@ -1,0 +1,23 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+modules=/usr/lib/edje/modules
+module_arch=v-1.16
+includedir=/usr/include
+datarootdir=${prefix}/share
+datadir=/usr/share/edje
+vmaj=1
+vmin=16
+vmic=0
+multisense=yes
+physics=no
+eoincludedir=/usr/share/eolian/include
+eolian_flags=-I${pc_sysrootdir}${eoincludedir}/edje-1
+
+Name: edje
+Description: Enlightened graphical design and layout engine.
+Requires.private: lua >= 5.1.0 ecore-audio >= 1.16.0 efreet >= 1.16.0 emile >= 1.16.0 eio >= 1.16.0 embryo >= 1.16.0 ecore-imf-evas >= 1.16.0 ecore-imf >= 1.16.0 ecore-input >= 1.16.0 ecore-file >= 1.16.0 ecore-evas >= 1.16.0 ecore >= 1.16.0 evas >= 1.16.0 eet >= 1.16.0 efl >= 1.16.0 eo >= 1.16.0 eina >= 1.16.0  
+Version: 1.16.0
+Libs: -L${libdir} -ledje
+Libs.private:  -lm
+Cflags: -I${includedir}/efl-1 -I${includedir}/edje-1

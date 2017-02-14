@@ -1,0 +1,13 @@
+PACKAGE_TARNAME=e_dbus
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+docdir=${prefix}/share/doc/${PACKAGE_TARNAME}
+
+Name: edbus
+Description: DBus convenience library
+Requires.private: ecore >= 1.7.9 eina >= 1.7.9 dbus-1 >= 0.62
+Version: 1.7.9
+Libs: -L${libdir} -ledbus -ldbus-1 
+Cflags: -I${includedir}/e_dbus-1
